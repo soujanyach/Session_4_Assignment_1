@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Session 4 | Assignment 1</title>
+	<style type="text/css">
+		div.speech-bubble {
+			display: block;
+			margin: 0 auto;
+			width: 250px;
+			height: 150px;
+			background: #4178bb;
+			border: 1px solid #0087c1;
+			border-radius: 15px;
+			position: relative;
+		}
+
+		div.speech-bubble::before {
+			content: '';
+			position: absolute;
+			right: 100%;
+			top: 25px;
+			width: 0;
+			height: 0;
+			border-top: 20px solid transparent;
+			border-right: 35px solid #4178bb;
+			border-bottom: 20px solid transparent;
+		}
+	</style>
+</head>
+<body>
+	<div class="speech-bubble"></div>
+</body>
+</html>
